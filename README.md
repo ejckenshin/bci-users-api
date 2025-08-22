@@ -30,6 +30,12 @@ Este API tiene como principal objetivo la creación de un usuario, asi como otra
 - Ejecutar la aplicación: `mvn spring-boot:run`
 - La API se ejecutará en: `http://localhost:8080/bci-users-api/v1`
 
+## Postman Collection
+
+Puedes descargar nuestra colección de Postman para probar los endpoints de la API.
+
+[Descargar Postman Collection](https://raw.githubusercontent.com/ejckenshin/bci-users-api/refs/heads/master/bci-users-api.postman_collection.json)
+
 ## Endpoints de la API
 
 Este proyecto usa openapi, y podemos encontrar también la documentación:
