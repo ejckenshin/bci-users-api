@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "fd6f325b-e0e4-4da7-b8c9-cbf6b619684b",
+		"name": "bci-users-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5615772"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
