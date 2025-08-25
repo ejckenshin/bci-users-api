@@ -31,13 +31,12 @@ public class UserServiceImpl implements UserService{
     @Override
     public UserRegisterResponse registerUser(UserRegisterRequest request) {
 
-        String email = null;
         if (!passwordValidator.isValid(request.getPassword())) {
             throw new BciUserException(HttpStatus.BAD_REQUEST,
                     KeyMessage.MESSAGE_PASSWORD_NOT_VALID);
         }
 
-        email = request.getEmail().trim().toLowerCase();
+        String email = request.getEmail().trim().toLowerCase();
         UserEntity entity = userRepository.findByEmail(email);
         if (Objects.nonNull(entity)) {
             throw new BciUserException(HttpStatus.PRECONDITION_FAILED,

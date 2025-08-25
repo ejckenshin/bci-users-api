@@ -9,6 +9,7 @@ public class KeyMessage {
     public static final String KEY_LIST_NOT_EMPTY = "{validation.list.not.empty}";
     public static final String KEY_EMAIL_NOT_VALID = "{validation.email.not.valid}";
     public static final String KEY_NAME_NOT_VALID = "{validation.name.not.valid}";
+    public static final String KEY_REQUEST_BODY_NOT_VALID = "validation.request.body.not.valid";
     public static final String MESSAGE_PASSWORD_NOT_VALID = "validation.password.not.valid";
     public static final String MESSAGE_EXISTING_MAIL = "validation.existing.mail";
 
