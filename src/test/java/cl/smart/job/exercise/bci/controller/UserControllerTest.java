@@ -80,4 +80,15 @@ public class UserControllerTest {
 
     }
 
+    @DisplayName("Required request body is missing")
+    @Test
+    void registerUserRequestBodyMissingTest() throws Exception {
+
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(""))
+                .andExpect(status().isBadRequest());
+
+    }
+
 }
